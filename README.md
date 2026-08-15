@@ -19,7 +19,7 @@ bundle install
 bundle exec jekyll serve
 ```
 
-http://127.0.0.1:4000/minimal-mistakes/
+http://127.0.0.1:4000/phanindra-portfolio/
 
 ## Do not need to edit
 
