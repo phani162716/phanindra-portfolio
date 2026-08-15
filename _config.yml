@@ -119,12 +119,12 @@ author:
   avatar           : "/assets/images/logo.svg"
   bio              : "M.Tech student, 1st year · **SRM University AP**. VLSI design and verification."
   location         : "Amaravati, India"
-  email            : "venakataphanindra_rayapudi@srmap.edu.in"
+  email            : "venkataphanindra_rayapudi@srmap.edu.in"
   # fediverse      : "@you@instance.social"  # used for fediverse:creator meta tag
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
-      url: "mailto:venakataphanindra_rayapudi@srmap.edu.in"
+      url: "mailto:venkataphanindra_rayapudi@srmap.edu.in"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/venkata-phanindra-rayapudi-b9b629256"

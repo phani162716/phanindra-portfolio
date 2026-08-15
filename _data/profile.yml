@@ -12,7 +12,7 @@ lede: >
   and waveform analysis. Looking for RTL design, functional verification, and IC development.
 
 github: "https://github.com/phani162716"
-email: "mailto:venakataphanindra_rayapudi@srmap.edu.in"
+email: "mailto:venkataphanindra_rayapudi@srmap.edu.in"
 phone: "tel:+917702211627"
 phone_label: "+91 77022 11627"
 linkedin: "https://www.linkedin.com/in/venkata-phanindra-rayapudi-b9b629256"
@@ -22,7 +22,7 @@ primary_cta:
   url: "#work"
 secondary_cta:
   label: Email
-  url: "mailto:venakataphanindra_rayapudi@srmap.edu.in"
+  url: "mailto:venkataphanindra_rayapudi@srmap.edu.in"
 
 stats:
   - title: M.Tech student
@@ -54,7 +54,7 @@ about:
     - label: Field
       value: Electronics and Communication · VLSI
     - label: Email
-      value: venakataphanindra_rayapudi@srmap.edu.in
+      value: venkataphanindra_rayapudi@srmap.edu.in
     - label: Phone
       value: +91 77022 11627
 
