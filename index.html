@@ -1,7 +1,7 @@
 ---
 layout: portfolio
-title: Portfolio
-excerpt: "3D portfolio — edit _data/profile.yml after deploy."
+title: Rayapudi Venkata Phanindra
+excerpt: "M.Tech student, 1st year, SRM University AP — VLSI design and verification."
 ---
 {%- assign p = site.data.profile -%}
 
@@ -75,6 +75,23 @@ excerpt: "3D portfolio — edit _data/profile.yml after deploy."
     </div>
   </section>
 
+  <section class="section" id="experience">
+    <p class="kicker reveal">{{ p.experience.kicker }}</p>
+    <h2 class="reveal">{{ p.experience.title }}</h2>
+    <div class="edu-grid">
+      {% for item in p.experience.items %}
+      <article class="edu-card reveal" data-tilt="8">
+        <div class="when">{{ item.when }}</div>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.text }}</p>
+        <div class="chip-row">
+          {% for tag in item.tags %}<span class="chip">{{ tag }}</span>{% endfor %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
   <section class="section" id="skills">
     <p class="kicker reveal">{{ p.skills.kicker }}</p>
     <h2 class="reveal">{{ p.skills.title }}</h2>
@@ -100,13 +117,40 @@ excerpt: "3D portfolio — edit _data/profile.yml after deploy."
         <div class="chip-row">
           {% for tag in p.work.featured.tags %}<span class="chip">{{ tag }}</span>{% endfor %}
         </div>
+        {% if p.work.featured.repo != "" %}
         <div class="hero-actions" style="margin-top:1.2rem">
           <a class="btn-3d" href="{{ p.work.featured.repo }}">Open repo</a>
-          <a class="btn-ghost" href="{{ '/projects/' | relative_url }}">All projects</a>
         </div>
+        {% endif %}
       </div>
       <div class="work-visual" aria-hidden="true"><span>{{ p.work.featured.mark }}</span></div>
     </article>
+    <div class="edu-grid" style="margin-top:1rem">
+      {% for item in p.work.more %}
+      <article class="work-card reveal" data-tilt="7">
+        <div class="when">{{ item.mark }}</div>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.text }}</p>
+        <div class="chip-row">
+          {% for tag in item.tags %}<span class="chip">{{ tag }}</span>{% endfor %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="section" id="publications">
+    <p class="kicker reveal">{{ p.publications.kicker }}</p>
+    <h2 class="reveal">{{ p.publications.title }}</h2>
+    <div class="edu-grid">
+      {% for item in p.publications.items %}
+      <article class="edu-card reveal" data-tilt="7">
+        <div class="when">{{ item.when }}</div>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.text }}</p>
+      </article>
+      {% endfor %}
+    </div>
   </section>
 
   <section class="section contact" id="contact">
@@ -115,9 +159,10 @@ excerpt: "3D portfolio — edit _data/profile.yml after deploy."
     <div class="glass reveal">
       <p class="lede" style="margin-bottom:1.2rem">{{ p.contact.text }}</p>
       <div class="contact-actions">
-        <a class="btn-3d" href="{{ p.github }}">{{ p.contact.button }}</a>
-        {% if p.email != "" %}<a class="btn-ghost" href="{{ p.email }}">Email</a>{% endif %}
-        {% if p.linkedin != "" %}<a class="btn-ghost" href="{{ p.linkedin }}">LinkedIn</a>{% endif %}
+        <a class="btn-3d" href="{{ p.email }}">Email</a>
+        <a class="btn-ghost" href="{{ p.phone }}">{{ p.phone_label }}</a>
+        <a class="btn-ghost" href="{{ p.linkedin }}">LinkedIn</a>
+        <a class="btn-ghost" href="{{ p.github }}">{{ p.contact.button }}</a>
       </div>
     </div>
   </section>

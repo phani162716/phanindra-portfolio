@@ -395,7 +395,9 @@ html { scroll-behavior: smooth; }
   margin-top: 1.6rem;
 }
 
-.edu-card .when {
+.edu-card .when,
+.work-card .when,
+.when {
   color: var(--gold);
   font-size: 0.78rem;
   letter-spacing: 0.08em;

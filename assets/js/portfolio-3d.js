@@ -367,6 +367,7 @@ function bootNav() {
   const map = [
     ["#about", "about"],
     ["#education", "education"],
+    ["#experience", "experience"],
     ["#work", "work"],
     ["#contact", "contact"],
   ];

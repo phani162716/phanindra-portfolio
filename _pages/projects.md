@@ -2,7 +2,7 @@
 permalink: /projects/
 title: Projects
 layout: portfolio
-excerpt: "Projects — edit _data/profile.yml"
+excerpt: "FPGA, Verilog, and ML work."
 ---
 {%- assign p = site.data.profile -%}
 {% include portfolio-nav.html %}
@@ -15,8 +15,16 @@ excerpt: "Projects — edit _data/profile.yml"
     <p>
       {% for tag in p.work.featured.tags %}<span class="chip">{{ tag }}</span> {% endfor %}
     </p>
-    <p><a class="btn-3d" href="{{ p.work.featured.repo }}">Open repo</a></p>
   </article>
+  {% for item in p.work.more %}
+  <article class="page-article reveal">
+    <h1>{{ item.title }}</h1>
+    <p>{{ item.text }}</p>
+    <p>
+      {% for tag in item.tags %}<span class="chip">{{ tag }}</span> {% endfor %}
+    </p>
+  </article>
+  {% endfor %}
 </main>
 
 {% include portfolio-footer.html %}

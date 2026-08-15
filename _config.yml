@@ -17,11 +17,11 @@ minimal_mistakes_skin    : "catppuccin_mocha" # "air", "aqua", "contrast", "dark
 # Site Settings
 locale                   : "en-US"
 direction                : # "ltr" (default), "rtl" # set the direction of the page
-title                    : "Phanindra Rayapudi"
+title                    : "Rayapudi Venkata Phanindra"
 title_separator          : "·"
-subtitle                 : "ECE · M.Tech · SRM University-AP"
-name                     : "Phanindra Rayapudi"
-description              : "B.Tech ECE graduate and M.Tech scholar at SRM University-AP. Electronics, FPGA, and full-stack systems."
+subtitle                 : "M.Tech student · SRM University AP · 1st year"
+name                     : "Rayapudi Venkata Phanindra"
+description              : "M.Tech student, 1st year at SRM University AP. VLSI design and verification — Verilog, VHDL, FPGA, Xilinx Vivado."
 url                      : "https://phani162716.github.io"
 baseurl                  : "/minimal-mistakes"
 repository               : "phani162716/minimal-mistakes"
@@ -31,7 +31,7 @@ masthead_title           : # overrides the website title displayed in the masthe
 breadcrumbs              : true
 words_per_minute         : 200
 enable_copy_code_button  : true
-copyright                : "Phanindra Rayapudi"
+copyright                : "Rayapudi Venkata Phanindra"
 copyright_url            : # "copyright" URL, defaults to site.url
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -115,23 +115,29 @@ analytics:
 
 # Site Author
 author:
-  name             : "Phanindra Rayapudi"
+  name             : "Rayapudi Venkata Phanindra"
   avatar           : "/assets/images/logo.svg"
-  bio              : "B.Tech ECE, M.Tech @ **SRM University-AP**. Electronics and software."
+  bio              : "M.Tech student, 1st year · **SRM University AP**. VLSI design and verification."
   location         : "Amaravati, India"
-  email            :
+  email            : "venakataphanindra_rayapudi@srmap.edu.in"
   # fediverse      : "@you@instance.social"  # used for fediverse:creator meta tag
   links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:venakataphanindra_rayapudi@srmap.edu.in"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/venkata-phanindra-rayapudi-b9b629256"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/phani162716"
-    - label: "University ERP"
-      icon: "fas fa-fw fa-layer-group"
-      url: "https://github.com/phani162716/university-erp-portal"
 
 # Site Footer
 footer:
   links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/venkata-phanindra-rayapudi-b9b629256"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/phani162716"

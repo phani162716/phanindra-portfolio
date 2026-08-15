@@ -1,97 +1,137 @@
 # ============================================================
-# EDIT THIS FILE after deploy. Then commit + push.
-# The 3D UI reads everything from here.
+# Profile — sourced from resume + your latest instructions
 # ============================================================
 
-brand: PR
-name_first: Your
-name_last: Name
-eyebrow: Role · College · Year
+brand: RVP
+name_first: Rayapudi
+name_last: Venkata Phanindra
+eyebrow: M.Tech student · SRM University AP · 1st year
 lede: >
-  Replace this intro with who you are, what you study, and what you build.
-  Two or three sentences is enough.
+  Electronics and Communication Engineer focused on VLSI design and verification.
+  Hands-on with Verilog RTL, VHDL on FPGA, Xilinx Vivado, FSM design, simulation,
+  and waveform analysis. Looking for RTL design, functional verification, and IC development.
 
-github: "https://github.com/your-username"
-email: ""          # e.g. mailto:you@email.com
-linkedin: ""       # e.g. https://linkedin.com/in/you
+github: "https://github.com/phani162716"
+email: "mailto:venakataphanindra_rayapudi@srmap.edu.in"
+phone: "tel:+917702211627"
+phone_label: "+91 77022 11627"
+linkedin: "https://www.linkedin.com/in/venkata-phanindra-rayapudi-b9b629256"
 
 primary_cta:
   label: See the work
   url: "#work"
 secondary_cta:
-  label: GitHub
-  url: "https://github.com/your-username"
+  label: Email
+  url: "mailto:venakataphanindra_rayapudi@srmap.edu.in"
 
 stats:
-  - title: Degree one
-    detail: School · status
-  - title: Degree two
-    detail: School · status
+  - title: M.Tech student
+    detail: SRM University AP · 1st year
   - title: Focus
-    detail: Your focus line
+    detail: VLSI design & verification
+  - title: Tools
+    detail: Verilog · VHDL · Vivado
 
 cube:
-  - ONE
-  - TWO
-  - THREE
-  - FOUR
-  - FIVE
-  - SIX
+  - VLSI
+  - FPGA
+  - RTL
+  - VHDL
+  - M.TECH
+  - SRM-AP
 
 about:
   kicker: About
-  title: Section title — replace this
+  title: RTL, FPGA, and the path into silicon.
   paragraphs:
-    - First about paragraph. Swap this for your story.
-    - Second about paragraph. Tools, interests, how you work.
+    - I am Rayapudi Venkata Phanindra, an M.Tech student in my first year at SRM University AP. I work on VLSI design and verification — Verilog RTL, FPGA implementation in Xilinx Vivado, and FSM-based digital systems.
+    - I have built voting logic and a PWM generator on hardware, written basic testbenches, and read waveforms until the design behaved. I want to contribute to RTL design, functional verification, and IC development with industry EDA tools.
   facts:
+    - label: Role
+      value: M.Tech student, 1st year
     - label: Campus
-      value: Your university
-    - label: Degree
-      value: Your degree
-    - label: Now
-      value: What you are doing now
-    - label: Work
-      value: Featured project name
-    - label: Tools
-      value: Tool, tool, tool
+      value: SRM University AP
+    - label: Field
+      value: Electronics and Communication · VLSI
+    - label: Email
+      value: venakataphanindra_rayapudi@srmap.edu.in
+    - label: Phone
+      value: +91 77022 11627
 
 education:
   kicker: Education
-  title: Education title — replace this
+  title: One campus. Next layer.
   items:
-    - when: Status
-      title: Degree — Field
-      text: School and a short note. Replace this.
-      tags: [Tag, Tag, Tag]
-    - when: Status
-      title: Degree — Field
-      text: School and a short note. Replace this.
-      tags: [Tag, Tag, Tag]
+    - when: 1st year · in progress
+      title: M.Tech — SRM University AP
+      text: Postgraduate student at SRM University AP. Deepening VLSI design, verification, and digital systems.
+      tags: [M.Tech, 1st year, VLSI]
+    - when: Completed
+      title: B.Tech — Electronics and Communication
+      text: SRM University AP. GPA 7.0 / 10.0. Digital design, communication, and the bench work that became FPGA projects.
+      tags: [ECE, GPA 7.0/10]
+    - when: 2022
+      title: Class 12 — State Board
+      text: 85 percent.
+      tags: [12th, 85%]
+    - when: 2020
+      title: Class 10 — State Board
+      text: 82 percent.
+      tags: [10th, 82%]
+
+experience:
+  kicker: Experience
+  title: Research that left the notebook.
+  items:
+    - when: Jun 2023 – Aug 2023
+      title: Student research intern
+      text: Built a CNN diagnostic model for breast cancer detection in Python — preprocessing, training, and evaluation. Debugging, optimization, and large datasets.
+      tags: [Python, CNN, Medical imaging]
 
 skills:
   kicker: Stack
-  title: Skills title — replace this
+  title: What I actually open.
   groups:
-    - title: Group A
-      tags: [Skill, Skill, Skill, Skill]
-    - title: Group B
-      tags: [Skill, Skill, Skill, Skill]
+    - title: Programming
+      tags: [Verilog, VHDL, C++, Python]
+    - title: VLSI / Digital design
+      tags: [RTL design, FSM design, Testbenches, Simulation, Waveform analysis]
+    - title: EDA tools
+      tags: [Xilinx Vivado, Cadence, MATLAB]
+    - title: Hardware
+      tags: [FPGA prototyping, Oscilloscope, Multimeter]
 
 work:
   kicker: Selected work
-  title: Work title — replace this
+  title: Designs that left the simulator.
   featured:
-    title: Project name
-    text: One short paragraph about the project. Replace this.
-    tags: [Tag, Tag, Tag]
-    repo: "https://github.com/your-username/your-repo"
-    mark: WORK
+    title: Voting Machine on FPGA
+    text: Digital voting system in VHDL on FPGA. FSM control for registration and counting, debounce for stable inputs, functional simulation, on-board verification, and logic sized for FPGA resources.
+    tags: [VHDL, FPGA, FSM, Verification]
+    repo: ""
+    mark: FPGA
+  more:
+    - title: Pulse Width Modulation
+      text: Verilog PWM generator with variable duty cycle. Implemented and simulated in Xilinx Vivado, checked on waveforms, used to drive LED brightness and motor speed, then debug timing.
+      tags: [Verilog, Vivado, PWM]
+      mark: PWM
+    - title: Student Performance Prediction
+      text: Machine learning model using regression and classification on academic data. Python, preprocessing, and model evaluation.
+      tags: [Python, ML]
+      mark: ML
+
+publications:
+  kicker: Publications
+  title: On record.
+  items:
+    - when: Nov 2024
+      title: "Patent — A System and Method for Breast Cancer Detection"
+      text: Anirban Ghosh and Venkata Phanindra Rayapudi.
 
 contact:
   kicker: Contact
-  title: Contact title — replace this
-  text: How people should reach you. Replace this.
-  button: github.com/your-username
+  title: If you are hiring for RTL or verification, write.
+  text: M.Tech student, 1st year, SRM University AP. Email and LinkedIn are the fastest paths.
+  button: GitHub
 
-footer_right: College · Field
+footer_right: SRM University AP · M.Tech · VLSI
