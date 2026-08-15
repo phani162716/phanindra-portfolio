@@ -1,0 +1,97 @@
+# ============================================================
+# EDIT THIS FILE after deploy. Then commit + push.
+# The 3D UI reads everything from here.
+# ============================================================
+
+brand: PR
+name_first: Your
+name_last: Name
+eyebrow: Role · College · Year
+lede: >
+  Replace this intro with who you are, what you study, and what you build.
+  Two or three sentences is enough.
+
+github: "https://github.com/your-username"
+email: ""          # e.g. mailto:you@email.com
+linkedin: ""       # e.g. https://linkedin.com/in/you
+
+primary_cta:
+  label: See the work
+  url: "#work"
+secondary_cta:
+  label: GitHub
+  url: "https://github.com/your-username"
+
+stats:
+  - title: Degree one
+    detail: School · status
+  - title: Degree two
+    detail: School · status
+  - title: Focus
+    detail: Your focus line
+
+cube:
+  - ONE
+  - TWO
+  - THREE
+  - FOUR
+  - FIVE
+  - SIX
+
+about:
+  kicker: About
+  title: Section title — replace this
+  paragraphs:
+    - First about paragraph. Swap this for your story.
+    - Second about paragraph. Tools, interests, how you work.
+  facts:
+    - label: Campus
+      value: Your university
+    - label: Degree
+      value: Your degree
+    - label: Now
+      value: What you are doing now
+    - label: Work
+      value: Featured project name
+    - label: Tools
+      value: Tool, tool, tool
+
+education:
+  kicker: Education
+  title: Education title — replace this
+  items:
+    - when: Status
+      title: Degree — Field
+      text: School and a short note. Replace this.
+      tags: [Tag, Tag, Tag]
+    - when: Status
+      title: Degree — Field
+      text: School and a short note. Replace this.
+      tags: [Tag, Tag, Tag]
+
+skills:
+  kicker: Stack
+  title: Skills title — replace this
+  groups:
+    - title: Group A
+      tags: [Skill, Skill, Skill, Skill]
+    - title: Group B
+      tags: [Skill, Skill, Skill, Skill]
+
+work:
+  kicker: Selected work
+  title: Work title — replace this
+  featured:
+    title: Project name
+    text: One short paragraph about the project. Replace this.
+    tags: [Tag, Tag, Tag]
+    repo: "https://github.com/your-username/your-repo"
+    mark: WORK
+
+contact:
+  kicker: Contact
+  title: Contact title — replace this
+  text: How people should reach you. Replace this.
+  button: github.com/your-username
+
+footer_right: College · Field

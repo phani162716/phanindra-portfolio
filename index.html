@@ -1,4 +1,126 @@
 ---
-layout: home
-author_profile: true
+layout: portfolio
+title: Portfolio
+excerpt: "3D portfolio — edit _data/profile.yml after deploy."
 ---
+{%- assign p = site.data.profile -%}
+
+{% include portfolio-nav.html %}
+
+<main id="main" class="pf-wrap">
+  <section class="hero" id="top">
+    <div class="reveal">
+      <p class="eyebrow">{{ p.eyebrow }}</p>
+      <h1>{{ p.name_first }} <span>{{ p.name_last }}</span></h1>
+      <p class="lede">{{ p.lede }}</p>
+      <div class="hero-actions">
+        <a class="btn-3d" href="{{ p.primary_cta.url }}">{{ p.primary_cta.label }}</a>
+        <a class="btn-ghost" href="{{ p.secondary_cta.url }}">{{ p.secondary_cta.label }}</a>
+      </div>
+      <div class="hero-meta">
+        {% for stat in p.stats %}
+        <div class="meta-card" data-tilt="8">
+          <strong>{{ stat.title }}</strong>
+          <span>{{ stat.detail }}</span>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="stage reveal d2" aria-hidden="true">
+      <div class="cube-scene">
+        <div class="front">{{ p.cube[0] }}</div>
+        <div class="back">{{ p.cube[1] }}</div>
+        <div class="right">{{ p.cube[2] }}</div>
+        <div class="left">{{ p.cube[3] }}</div>
+        <div class="top">{{ p.cube[4] }}</div>
+        <div class="bottom">{{ p.cube[5] }}</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <p class="kicker reveal">{{ p.about.kicker }}</p>
+    <h2 class="reveal">{{ p.about.title }}</h2>
+    <div class="split">
+      <article class="about-panel reveal" data-tilt="7">
+        {% for para in p.about.paragraphs %}
+        <p>{{ para }}</p>
+        {% endfor %}
+      </article>
+      <article class="about-panel reveal d2" data-tilt="7">
+        <ul>
+          {% for fact in p.about.facts %}
+          <li><strong>{{ fact.label }}</strong> — {{ fact.value }}</li>
+          {% endfor %}
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="education">
+    <p class="kicker reveal">{{ p.education.kicker }}</p>
+    <h2 class="reveal">{{ p.education.title }}</h2>
+    <div class="edu-grid">
+      {% for item in p.education.items %}
+      <article class="edu-card reveal" data-tilt="9">
+        <div class="when">{{ item.when }}</div>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.text }}</p>
+        <div class="chip-row">
+          {% for tag in item.tags %}<span class="chip">{{ tag }}</span>{% endfor %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <p class="kicker reveal">{{ p.skills.kicker }}</p>
+    <h2 class="reveal">{{ p.skills.title }}</h2>
+    <div class="skill-grid">
+      {% for group in p.skills.groups %}
+      <article class="skill-col reveal" data-tilt="8">
+        <h3>{{ group.title }}</h3>
+        <div class="chip-row">
+          {% for tag in group.tags %}<span class="chip">{{ tag }}</span>{% endfor %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="section" id="work">
+    <p class="kicker reveal">{{ p.work.kicker }}</p>
+    <h2 class="reveal">{{ p.work.title }}</h2>
+    <article class="work-card featured reveal" data-tilt="6">
+      <div>
+        <h3>{{ p.work.featured.title }}</h3>
+        <p>{{ p.work.featured.text }}</p>
+        <div class="chip-row">
+          {% for tag in p.work.featured.tags %}<span class="chip">{{ tag }}</span>{% endfor %}
+        </div>
+        <div class="hero-actions" style="margin-top:1.2rem">
+          <a class="btn-3d" href="{{ p.work.featured.repo }}">Open repo</a>
+          <a class="btn-ghost" href="{{ '/projects/' | relative_url }}">All projects</a>
+        </div>
+      </div>
+      <div class="work-visual" aria-hidden="true"><span>{{ p.work.featured.mark }}</span></div>
+    </article>
+  </section>
+
+  <section class="section contact" id="contact">
+    <p class="kicker reveal">{{ p.contact.kicker }}</p>
+    <h2 class="reveal">{{ p.contact.title }}</h2>
+    <div class="glass reveal">
+      <p class="lede" style="margin-bottom:1.2rem">{{ p.contact.text }}</p>
+      <div class="contact-actions">
+        <a class="btn-3d" href="{{ p.github }}">{{ p.contact.button }}</a>
+        {% if p.email != "" %}<a class="btn-ghost" href="{{ p.email }}">Email</a>{% endif %}
+        {% if p.linkedin != "" %}<a class="btn-ghost" href="{{ p.linkedin }}">LinkedIn</a>{% endif %}
+      </div>
+    </div>
+  </section>
+</main>
+
+{% include portfolio-footer.html %}
