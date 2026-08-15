@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "catppuccin_mocha" # "air", "aqua", "contrast", "dark
 # Site Settings
 locale                   : "en-US"
 direction                : # "ltr" (default), "rtl" # set the direction of the page
-title                    : "Rayapudi Venkata Phanindra"
+title                    : "Phanindra Portfolio"
 title_separator          : "·"
 subtitle                 : "M.Tech student · SRM University AP · 1st year"
 name                     : "Rayapudi Venkata Phanindra"
